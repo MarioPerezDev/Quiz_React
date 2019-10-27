@@ -1,0 +1,159 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.bar{
+ text-align: center;
+ background-color: black;
+ padding:20px;
+ color: white;
+}
+.questionImg img{
+  width: 100%;
+  height: 300px;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.questionContainer .questionTitle {
+color:red;
+}
+
+.tipsContainer{
+   border:solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+  bottom: 0px;
+  width: 95%;
+  min-height: 131px; 
+}
+.container{
+  padding:20px;
+  margin-top:20px;
+  background-color:#EBEAED;
+  border:solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+li{
+  text-align: left;
+}
+.completed{
+  padding: 100px;
+}
+
+.authordata{
+  margin-top:0px;
+  margin-bottom: 15px;
+  font-size:80%;
+  text-align: left;
+}
+.authordata .authorImg{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  padding:5px;
+
+}
+.questionContainer{
+  padding: 10px;
+  padding-left: 0px;
+  margin-bottom: 28px;
+}
+.questionText{
+  font-size: 1.5em;
+  font-weight: bold;
+  color:#0069D9;
+  text-align: center;
+}
+.btn{
+  font-size: 1.2em;
+  box-shadow: 2px 2px 2px grey;
+}
+.submitArea {
+  font-family: 'Roboto', sans-serif;
+}
+
+.submitArea span button{
+  font-family: 'Roboto', sans-serif;
+  vertical-align: middle;
+  margin-right: 5px;
+  border:solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+}
+
+.submitArea .btn{
+  font-family: 'Raleway', sans-serif;
+}
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+.submitArea .active{
+  background-color: #0069D9;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.submitArea .done{
+  background-color: #75787D;
+  color: #EBEAED;
+  font-family: 'Roboto', sans-serif;
+}
+
+.submitArea .notdone{
+  font-family: 'Roboto', sans-serif;
+}
+
+.spin{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.timer{
+  padding:10px;
+  padding-bottom: 0px;
+  border:solid;
+  border-width: 0.5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+}
+
+.timer p {
+  color: red;
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0px;
+}
+
+.navbutton{
+  color: white;
+  background-color: black;
+  border: none;
+  height: 25px;
+  margin:0px;
+}
