@@ -18,7 +18,7 @@ return (
 				<h1 className="questionTitle">
 						Conteste a la siguiente pregunta:
 					</h1>
-				<div className="col-3">
+				<div style={{paddingLeft:0}} className="col-3">
 					<Timer
 					text="Tiempo restante:" />
 				</div>
@@ -27,8 +27,8 @@ return (
 						<div className="questionText">
 						{this.props.question.question}:
 						</div>
-						
-						<input 
+
+						<input
 
 							name="text"
 							type="text"
@@ -36,7 +36,7 @@ return (
 							value={this.props.question.userAnswer || ''}
 							onChange={(e)=>this.props.onQuestionAnswer(e.target.value)}
 						/>
-						
+
 					</div>
 				</div>
 			</div>
@@ -56,9 +56,9 @@ return (
 	<div className="row">
 	<div className="authordata col-5">
 				<div className="authorName" style= {{display: "inline-block"}}>
-					Creador de la pregunta: 
+					Creador de la pregunta:
 				<img className="authorImg" src={this.props.authorImgUrl} alt="loading">
-				</img> 
+				</img>
 				{this.props.authorName}
 				</div>
 			</div>
