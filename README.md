@@ -1,5 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Realizado por Mario Pérez Gil
+
+# Mejoras realizadas
+- Botón de reset que pida un conjunto nuevo de preguntas al servidor y reinicie el juego.
+- Estilo personalizado utilizando Bootstrap.
+- Cuenta atrás que limita el tiempo de respuesta (concretamente 60 segundos).
+- Índice navegable (en forma de botones con los números de las preguntas).
+
+# Vista previa
+![alt game screen](https://github.com/MarioPerezDev/Quiz_React/blob/master/public/Thumbnail.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
