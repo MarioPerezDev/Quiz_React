@@ -112,12 +112,6 @@ li{
   font-family: 'Raleway', sans-serif;
 }
 
-.submitArea .active{
-  background-color: #0069D9;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
 .submitArea .done{
   background-color: #75787D;
   color: #EBEAED;
@@ -125,6 +119,11 @@ li{
 }
 
 .submitArea .notdone{
+  font-family: 'Roboto', sans-serif;
+}
+.submitArea .active{
+  background-color: #0069D9;
+  color: white;
   font-family: 'Roboto', sans-serif;
 }
 

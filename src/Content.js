@@ -1,8 +1,25 @@
 import React from 'react';
 import Timer from './Timer';
+import {changeQuestion, check} from './redux/actions'
+
 
 
 export default class Content extends React.Component {
+	constructor(props){
+		super(props)
+		this.handleKeyPress = this.handleKeyPress.bind(this);
+	}
+	componentDidUpdate(){
+    this.nameInput.focus();
+  }
+
+	handleKeyPress(target) {
+  if(target.charCode==13){
+		if(this.props.currentQuestion < this.props.length -1)
+    this.props.dispatch(changeQuestion(1));
+		this.props.dispatch(check(this.props.currentQuestion))
+  }
+}
 
 render() {
 	var a = this.props.question.tips.slice(0,3)
@@ -12,6 +29,7 @@ return (
 		<div className="col-5 questionImg">
 			<img src={this.props.imgurl} alt="loading"/>
 		</div>
+
 
 		<div className="col-7">
 			<div className="row">
@@ -29,7 +47,9 @@ return (
 						</div>
 
 						<input
-
+							onKeyPress={this.handleKeyPress}
+							ref={(input) => { this.nameInput = input; }}
+							autoFocus
 							name="text"
 							type="text"
 							placeholder="Introduzca su respuesta"

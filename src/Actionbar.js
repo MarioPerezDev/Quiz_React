@@ -27,37 +27,39 @@ return (
     })
     .then((recurso) => {
     	this.props.dispatch(initQuestions(recurso))
-    })			
+    })
 		}}>
 		Reset
 		</button>
 
-		
-		<button 
+
+		<button
 		className="btn btn-dark float-right"
 		disabled={this.props.currentQuestion === this.props.questions.length -1 ? true : false}
 		onClick={(e)=> {this.props.dispatch(changeQuestion(1))
 			this.props.dispatch(check(this.props.currentQuestion))}}>
 		Siguiente
 		</button>
-		
+
 	</div>
 	<div className="col-7 submitArea">
 <span className="align-middle">
 
 	{
 	this.props.questions.map((question,i)=>
-	<button 
-	className={`btn ${this.props.currentQuestion === i ? 'active': ''}
-	${this.props.questions[i].done === true ? 'done': 'notdone'}`}
+	<button
+	className={`btn
+		${this.props.questions[i].done === true ? 'done': 'notdone'}
+		${this.props.currentQuestion === i ? 'active': ''}
+	`}
 	onClick={(e)=> {this.props.dispatch(changeDirectQuestion(i))
 	this.props.dispatch(check(this.props.currentQuestion))}}
 	>{(i+1).toString()}</button>
 	)}
 	</span>
-	
-	
-		<button 
+
+
+		<button
 		className="btn btn-primary float-right"
 		onClick={(e)=> {this.props.dispatch(submit(this.props.questions))}}>
 		Comprobar

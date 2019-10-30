@@ -13,7 +13,7 @@ if(this.props.question){
 	if(this.props.question.attachment != null) {
 		img1= this.props.question.attachment.url
 	}
-	
+
 	if (this.props.question.author.photo !=null){
 		img2=this.props.question.author.photo.url
 	}
@@ -24,7 +24,7 @@ if(this.props.question){
 }
 	if(this.props.finished){
 return(
-<div 
+<div
 className="col-sm completed">
 <h1>Juego completado</h1>
 <h2>Puntuación obtenida: {this.props.score}</h2>
@@ -35,8 +35,8 @@ return (
 	<div>
 
 
-	<Content 
-
+	<Content
+	dispatch={this.props.dispatch}
 	imgurl={img1}
 	finished={this.props.finished}
 	authorName={author}
@@ -44,7 +44,9 @@ return (
 	question={this.props.question}
 	onQuestionAnswer={this.props.onQuestionAnswer}
 	style= {{width:300, height:300}}
-	/>	
+	currentQuestion={this.props.currentQuestion}
+	length={this.props.questions.length}
+	/>
 
 	<Actionbar/>
 
