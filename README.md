@@ -7,6 +7,7 @@ Realizado por Mario Pérez Gil
 - Estilo personalizado utilizando Bootstrap.
 - Cuenta atrás que limita el tiempo de respuesta (concretamente 60 segundos).
 - Índice navegable (en forma de botones con los números de las preguntas).
+- Focus al input y cambio de pregunta automático al pulsar la tecla "Enter".
 
 # Vista previa
 ![alt game screen](https://github.com/MarioPerezDev/Quiz_React/blob/master/public/Thumbnail.png)
@@ -15,6 +16,9 @@ Realizado por Mario Pérez Gil
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm install`
+Installs all the dependencies.
+
 
 ### `npm start`
 
