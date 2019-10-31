@@ -1,5 +1,6 @@
 import React from 'react';
 import Actionbar from './Actionbar';
+import Endscreen from './Endscreen';
 import Content from './Content';
 import { connect } from 'react-redux';
 
@@ -24,31 +25,24 @@ if(this.props.question){
 }
 	if(this.props.finished){
 return(
-<div
-className="col-sm completed">
-<h1>Juego completado</h1>
-<h2>Puntuación obtenida: {this.props.score}</h2>
-</div>
-)
-	}else{
-return (
+	<Endscreen dispatch={this.props.dispatch} score={this.props.score}/>
+)}else{
+return(
 	<div>
+		<Content
+		dispatch={this.props.dispatch}
+		imgurl={img1}
+		finished={this.props.finished}
+		authorName={author}
+		authorImgUrl={img2}
+		question={this.props.question}
+		onQuestionAnswer={this.props.onQuestionAnswer}
+		style= {{width:300, height:300}}
+		currentQuestion={this.props.currentQuestion}
+		length={this.props.questions.length}
+		/>
 
-
-	<Content
-	dispatch={this.props.dispatch}
-	imgurl={img1}
-	finished={this.props.finished}
-	authorName={author}
-	authorImgUrl={img2}
-	question={this.props.question}
-	onQuestionAnswer={this.props.onQuestionAnswer}
-	style= {{width:300, height:300}}
-	currentQuestion={this.props.currentQuestion}
-	length={this.props.questions.length}
-	/>
-
-	<Actionbar/>
+		<Actionbar/>
 
 	</div>
 );
