@@ -62,6 +62,9 @@ li{
   padding: 100px;
   font-size:30px;
 }
+.completed img{
+  height: 200px;
+}
 
 .authordata{
   margin-top:0px;
